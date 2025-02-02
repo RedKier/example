@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ESNext",
+    "moduleResolution": "NodeNext",
+    "declaration": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictNullChecks": true,
+    "noUnusedParameters": true,
+    "baseUrl": "src",
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["*"],
+      "@commands/*": ["commands/*"],
+      "@config/*": ["config/*"],
+      "@database/*": ["database/*"],
+      "@validationSchemas/*": ["validationSchemas/*"],
+      "@exceptions/*": ["exceptions/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@queries/*": ["queries/*"],
+      "@routes/*": ["routes/*"],
+      "@services/*": ["services/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.json", ".env"],
+  "exclude": ["node_modules"]
+}
